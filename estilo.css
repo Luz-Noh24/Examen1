@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 20px;
+    max-width: 1400px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno para que no quede pegado a los bordes */
 }
 
 .anch {
@@ -23,18 +23,18 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Para alinear el logo y la barra de navegación */
     background: #f4f4f4;
     padding: 20px;
 }
 
 header .logo {
     display: flex;
-    align-items: center;
+    align-items: center; /* Centra el logo verticalmente */
 }
 
 header .logo img {
-    height: 100%;
+    height: 100%; /* Asegúrate de que el tamaño del logo sea apropiado */
     width: auto;
 }
 
@@ -47,7 +47,7 @@ nav {
 .barra {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Alinea los enlaces de navegación verticalmente */
     background: #f5f5f5;
     padding: 10px 0;
     border-top: 1px solid #ddd;
@@ -68,9 +68,9 @@ nav {
 
 /* HERO SECTION */
 .hero {
-    position: relative;
+    position: relative; /* Para posicionar el texto sobre la imagen */
     width: 100%;
-    height: 400px;
+    height: 400px; /* Ajusta la altura según lo que necesites */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,18 +80,18 @@ nav {
 .hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el área */
 }
 
 .hero h2 {
-    position: absolute;
+    position: absolute; /* Para que esté sobre la imagen */
     color: white;
     font-size: 2rem;
     text-align: center;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-    padding: 0 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    padding: 0 20px; /* Para dar espacio en los laterales */
     box-sizing: border-box;
-    width: 100%;
+    width: 100%; /* El texto ocupa todo el ancho del contenedor */
 }
 
 /* TEAM SECTION */
@@ -121,26 +121,28 @@ nav {
     border-radius: 0%;
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
 }
 
-.member i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.icon-container {
+    position: absolute; /* Coloca el icono en una posición absoluta */
+    top: 50%; /* Centro verticalmente */
+    left: 50%; /* Centro horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar completamente */
+    background-color: white; /* Fondo blanco para el icono */
+    border-radius: 100%; /* Hace que el fondo del icono sea circular */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra en el círculo */
+}
+
+.icon-container i {
     color: #3ba9ba; /* Iconos de color azul */
-    font-size: 2.5rem;
-    display: none;
-}
-
-.member:hover i {
-    display: block; /* Mostrar el ícono al pasar el ratón por encima */
+    font-size: 1.5rem; /* Ajusta el tamaño del icono */
 }
 
 .member h3 {
     margin-top: 10px;
-    color: #ff6600; /* Nombres en naranja */
+    color: #da5f33; /* Nombres en naranja */
     font-size: 1.2rem;
 }
 
@@ -149,8 +151,9 @@ nav {
     color: #333;
 }
 
+
 .services {
-    background: #f4f4f4;
+    background: white;
     padding: 40px 20px;
     text-align: center;
 }
@@ -168,6 +171,10 @@ nav {
 .service-item {
     width: 200px;
     margin: 20px;
+}
+.services i
+{
+    background-color:e3e3e3 ;
 }
 
 .video {

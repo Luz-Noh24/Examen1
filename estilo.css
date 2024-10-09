@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container
+{
+    max-width: 1400px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno para que no quede pegado a los bordes */
+}
+header {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+header .logo h1 {
+    color: #333;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.team {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    margin: 20px;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.services {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 200px;
+    margin: 20px;
+}
+
+.projects {
+    padding: 40px 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
